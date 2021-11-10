@@ -129,4 +129,51 @@
 			removalDelay: 300,
 			type: "inline",
 		})
+		function audioMessage() {
+		const audio = document.querySelector('.voice-elem__audio'),
+		  	  toggleBtn = document.querySelector('.voice-elem__toggle')
+			  progressBar = document.querySelector('.voice-elem__progress-bar')
+		  	  now = document.querySelector('.voice-elem__now')
+
+
+		if(audio && toggleBtn && progressBar && now) {
+
+			toggleBtn.addEventListener('click', function() {
+				toggleBtn.classList.toggle('_active');
+				if(toggleBtn.classList.contains('_active')) {
+					toggleBtn.innerHTML = toggleBtn.getAttribute('data-pause-text');
+					audio.play();
+				} else {
+					toggleBtn.innerHTML = toggleBtn.getAttribute('data-start-text');
+					audio.pause();
+				}
+				
+			});
+	
+			progressBar.addEventListener('click', function (event) {
+				let coordStart = this.getBoundingClientRect().left
+				let coordEnd = event.pageX
+				let p = (coordEnd - coordStart) / this.offsetWidth
+				now.style.width = p.toFixed(3) * 100 + '%'
+	
+				audio.currentTime = p * audio.duration
+				toggleBtn.classList.add('_active');
+				toggleBtn.innerHTML = toggleBtn.getAttribute('data-pause-text');
+				audio.play()
+			})
+	
+			audio.onended = function() {
+				toggleBtn.classList.remove('_active');
+				toggleBtn.innerHTML = toggleBtn.getAttribute('data-start-text');
+			};
+	
+			setInterval(() => {
+				now.style.width = audio.currentTime / audio.duration.toFixed(3) * 100 + '%'
+			}, 200)
+
+		}
+		
+	}
+
+	audioMessage();
 </script></body></html>
