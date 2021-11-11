@@ -70,7 +70,7 @@
 				width++;
 				$('.search-problem__modal--progress-bar').css('width', width + '%');
 				$('.search-problem__modal--progress-value-ready').html(width + '%');
-				if(width == 100) {
+				if(width >= 100) {
 					clearInterval(interval);
 					$('.search-problem__modal--title').html($('.search-problem__modal--title').data('search-successfully'))
 				}
