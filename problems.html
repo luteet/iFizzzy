@@ -5,17 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFizzzy</title>
     <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
+    
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
-    <header class="header" style="height: 60px;">
-        
-    </header>    <div class="wrapper">        <section class="problems">            <div class="problems__container container _pt50">                <h1 class="problems__title _title _alt _center">                    Забудь об этих проблемах                </h1>                <ul class="problems__list">                    <li class="problems__item">
+    <header class="header">
+        <div class="header__container container">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.png" width="150" alt="" class="header__logo--img">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav--list">
+                    <li class="header__nav--item">
+                        <a href="#" class="header__nav--link">
+                            Вкусы
+                        </a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a href="#" class="header__nav--link">
+                            Где купить?
+                        </a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a href="#" class="header__nav--link">
+                            Буть здоровым
+                        </a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a href="#" class="header__nav--link">
+                            COVID-19
+                        </a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a href="search-problem.html" class="header__nav--link">
+                            Решить все проблемы
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger burger">
+                Меню
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>    <div class="wrapper">        <section class="problems">            <div class="problems__container container _pt50">                <h1 class="problems__title _title _alt _center">                    Забудь об этих проблемах                </h1>                <ul class="problems__list">                    <li class="problems__item wow animate__fadeInUp">
     <h2 class="problems__item--title _title _min _center">
         Отравление
     </h2>
-    <div class="problems__item--picture">
+    <div class="problems__item--picture _icon-clip" style="--left: 10px; --top: 0; --transform_before: translate(0%, -15%); --transform: translate(-25%, -45%) rotate(-15deg);">
         <img src="img/problems/image-1.png" loading="lazy" width="164" alt="" class="problems__item--img">
     </div>
     <div class="problems__item--text">
@@ -23,11 +62,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ornare bibendum id egestas ut a ultrices urna. Enim cursus mattis a porttitor aliquet. Euismod aliquet etiam nunc ut morbi egestas ipsum. Volutpat felis pulvinar diam sem egestas sed mattis. Sollicitudin sem maecenas ornare et risus elit. Arcu cursus vitae faucibus quis laoreet velit leo quam. Dolor aliquam pulvinar iaculis risus quis non. At pretium nec nec porttitor proin eu odio tincidunt. Egestas donec pretium pellentesque lectus venenatis amet blandit a.
         </p>
     </div>
-</li>                    <li class="problems__item">
+</li>                    <li class="problems__item wow animate__fadeInUp">
     <h2 class="problems__item--title _title _min _center">
         Диарея
     </h2>
-    <div class="problems__item--picture">
+    <div class="problems__item--picture _icon-clip" style="--left: 100%; --top: 0; --transform_before: translate(-125%, -15%) rotate(15deg); --transform: translate(35%, -40%) rotate(5deg);">
         <img src="img/problems/image-2.png" loading="lazy" width="164" alt="" class="problems__item--img">
     </div>
     <div class="problems__item--text">
@@ -35,11 +74,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ornare bibendum id egestas ut a ultrices urna. Enim cursus mattis a porttitor aliquet. Euismod aliquet etiam nunc ut morbi egestas ipsum. Volutpat felis pulvinar diam sem egestas sed mattis. Sollicitudin sem maecenas ornare et risus elit. Arcu cursus vitae faucibus quis laoreet velit leo quam. Dolor aliquam pulvinar iaculis risus quis non. At pretium nec nec porttitor proin eu odio tincidunt. Egestas donec pretium pellentesque lectus venenatis amet blandit a.
         </p>
     </div>
-</li>                    <li class="problems__item">
+</li>                    <li class="problems__item wow animate__fadeInUp">
     <h2 class="problems__item--title _title _min _center">
         Аллергия
     </h2>
-    <div class="problems__item--picture">
+    <div class="problems__item--picture _icon-clip" style="--left: 0%; --top: 0; --transform_before: translate(35%, -40%) rotate(-7deg); --transform: translate(-45%, -10%) rotate(-6deg);">
         <img src="img/problems/image-3.png" loading="lazy" width="164" alt="" class="problems__item--img">
     </div>
     <div class="problems__item--text">
@@ -47,11 +86,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ornare bibendum id egestas ut a ultrices urna. Enim cursus mattis a porttitor aliquet. Euismod aliquet etiam nunc ut morbi egestas ipsum. Volutpat felis pulvinar diam sem egestas sed mattis. Sollicitudin sem maecenas ornare et risus elit. Arcu cursus vitae faucibus quis laoreet velit leo quam. Dolor aliquam pulvinar iaculis risus quis non. At pretium nec nec porttitor proin eu odio tincidunt. Egestas donec pretium pellentesque lectus venenatis amet blandit a.
         </p>
     </div>
-</li>                    <li class="problems__item">
+</li>                    <li class="problems__item wow animate__fadeInUp">
     <h2 class="problems__item--title _title _min _center">
         Любишь себя
     </h2>
-    <div class="problems__item--picture">
+    <div class="problems__item--picture _icon-clip" style="--left: 0%; --top: 100%; --transform_before: translate(35%, -90%) rotate(-7deg) scale(-1); --transform: translate(10%, 33%) rotate(-7deg);">
         <img src="img/problems/image-4.png" loading="lazy" width="164" alt="" class="problems__item--img">
     </div>
     <div class="problems__item--text">
@@ -59,11 +98,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ornare bibendum id egestas ut a ultrices urna. Enim cursus mattis a porttitor aliquet. Euismod aliquet etiam nunc ut morbi egestas ipsum. Volutpat felis pulvinar diam sem egestas sed mattis. Sollicitudin sem maecenas ornare et risus elit. Arcu cursus vitae faucibus quis laoreet velit leo quam. Dolor aliquam pulvinar iaculis risus quis non. At pretium nec nec porttitor proin eu odio tincidunt. Egestas donec pretium pellentesque lectus venenatis amet blandit a.
         </p>
     </div>
-</li>                    <li class="problems__item">
+</li>                    <li class="problems__item wow animate__fadeInUp">
     <h2 class="problems__item--title _title _min _center">
         Covid-19
     </h2>
-    <div class="problems__item--picture">
+    <div class="problems__item--picture _icon-clip" style="--left: 0%; --top: 0%; --transform_before: translate(35%, -20%) rotate(-7deg); --transform: translate(-20%, -56%);">
         <img src="img/problems/image-5.png" loading="lazy" width="164" alt="" class="problems__item--img">
     </div>
     <div class="problems__item--text">
@@ -71,11 +110,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ornare bibendum id egestas ut a ultrices urna. Enim cursus mattis a porttitor aliquet. Euismod aliquet etiam nunc ut morbi egestas ipsum. Volutpat felis pulvinar diam sem egestas sed mattis. Sollicitudin sem maecenas ornare et risus elit. Arcu cursus vitae faucibus quis laoreet velit leo quam. Dolor aliquam pulvinar iaculis risus quis non. At pretium nec nec porttitor proin eu odio tincidunt. Egestas donec pretium pellentesque lectus venenatis amet blandit a.
         </p>
     </div>
-</li>                    <li class="problems__item">
+</li>                    <li class="problems__item wow animate__fadeInUp">
     <h2 class="problems__item--title _title _min _center">
         Очищение организма
     </h2>
-    <div class="problems__item--picture">
+    <div class="problems__item--picture _icon-clip" style="--left: 0%; --top: 0%; --transform_before: translate(100%, -50%); --transform: translate(25%, -56%) rotate(15deg);">
         <img src="img/problems/image-6.png" loading="lazy" width="164" alt="" class="problems__item--img">
     </div>
     <div class="problems__item--text">
@@ -83,11 +122,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ornare bibendum id egestas ut a ultrices urna. Enim cursus mattis a porttitor aliquet. Euismod aliquet etiam nunc ut morbi egestas ipsum. Volutpat felis pulvinar diam sem egestas sed mattis. Sollicitudin sem maecenas ornare et risus elit. Arcu cursus vitae faucibus quis laoreet velit leo quam. Dolor aliquam pulvinar iaculis risus quis non. At pretium nec nec porttitor proin eu odio tincidunt. Egestas donec pretium pellentesque lectus venenatis amet blandit a.
         </p>
     </div>
-</li>                    <li class="problems__item">
+</li>                    <li class="problems__item wow animate__fadeInUp">
     <h2 class="problems__item--title _title _min _center">
         Похмелье
     </h2>
-    <div class="problems__item--picture">
+    <div class="problems__item--picture _icon-clip" style="--left: 0%; --top: 0%; --transform_before: translate(15%, -50%) rotate(-7deg); --transform: translate(-30%, -35%);">
         <img src="img/problems/image-7.png" loading="lazy" width="164" alt="" class="problems__item--img">
     </div>
     <div class="problems__item--text">
