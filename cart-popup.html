@@ -171,6 +171,14 @@
 			type: 'inline',
 			preloader: false,
 			removalDelay: 300,
+			callbacks: {
+				open: function() {
+				  $('.header').css('left', `-${(window.innerWidth - $('body').width()) / 2}px`);
+				},
+				close: function() {
+					$('.header').css('left', `0px`);
+				}
+			}
 		});
 		$.magnificPopup.open({
 			items: {
@@ -178,6 +186,14 @@
 			},
 			removalDelay: 300,
 			type: "inline",
+			callbacks: {
+				open: function() {
+				  $('.header').css('left', `-${(window.innerWidth - $('body').width()) / 2}px`);
+				},
+				close: function() {
+					$('.header').css('left', `0px`);
+				}
+			}	
 		})
 		function audioMessage() {
 		const audio = document.querySelector('.voice-elem__audio'),

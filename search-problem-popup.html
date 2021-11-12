@@ -107,7 +107,7 @@
 			modal: true,
 			callbacks: {
 				open: function() {
-				  
+				  $('.header').css('left', `-${window.innerWidth - $('body').width()}px`);
 				},
 			}		
 		})
